@@ -1,0 +1,1139 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>EDukan</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="jvs.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-default" role="navigation">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <div class="horizontal-menu">
+                        <ul>
+                            <li>
+                                <img src="images/Logo/8.png" style="width: 200px;height: 40px;" alt="">
+                            </li>
+                            <li>
+                                <a href="#">HOME</a>
+                            </li>
+                            <li>
+                                <a href="#">Fashion</a>
+                            </li>
+                            <li>
+                                <a href="#">Men</a>
+                            </li>
+                        </ul>
+                        <div class="search-box">
+                            <input type="search" id="query" name="q" placeholder="search..." aria-label="Search through site content">
+                            <button>Search</button>
+                            <a href="#">LogIn</a>
+                        </div>
+                        <a href="#" <i class="fas fa fa-shopping-cart fa-lg"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <nav class="navbar navbar-default" role="navigation">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <div class="horizontal-menu2 purple topBotomBordersIn">
+                        <ul>
+                            <li>
+                                <div class="icon-bar">
+                                    <a class="active" href="#"><i class="fa fa-bars"></i></a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="icon-bar">
+                                    <a href="#"><i class="fa fa-home"></i>Home</a>
+                                </div>
+                            </li>
+
+                            <li>
+                                <a href="#">Best Seller</a>
+                            </li>
+                            <li>
+                                <a href="#">Mobiles</a>
+                            </li>
+                            <li>
+                                <a href="#">Fashion</a>
+                            </li>
+                            <li>
+                                <a href="#">Men</a>
+                            </li>
+                            <li>
+                                <a href="#">Women</a>
+                            </li>
+                            <li>
+                                <a href="#">Kids</a>
+                            </li>
+                            <li>
+                                <a href="#">Customer Service</a>
+                            </li>
+                            <li>
+                                <a href="#">Computer</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Section-1-- SlideShow-->
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <div class="numbertext">1/3</div>
+            <img src="images/Top seller/phone/117.jpg" style="width: 100%; height: 300px;">
+            <div class="text">Caption Text</div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">2/3</div>
+            <img src="Images/Top seller/171.jpg" style="width: 100%;height: 300px;">
+            <div class="text">Caption Two</div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">3/3</div>
+            <img src="Images/Top seller/175.webp" style="width: 100%;height: 300px;">
+            <div class="text">Caption Three</div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">3/3</div>
+            <img src="Images/Top seller/slides/slide1.jpg" style="width: 100%;height: 300px;">
+            <div class="text">Caption Three</div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">3/3</div>
+            <img src="Images/Top seller/slides/slide2.jpg" style="width: 100%;height: 300px;">
+            <div class="text">Caption Three</div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">3/3</div>
+            <img src="Images/Top seller/slides/slide3.jpg" style="width: 100%;height: 300px;">
+            <div class="text">Caption Three</div>
+        </div>
+
+
+        <a href="" class="prev" onclick="plusSlides(-1)" &#10094;></a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+    <!-- <div style="text-align: center;">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div> -->
+    <script>
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {
+                slideIndex = 1
+            }
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(showSlides, 2000);
+        }
+    </script>
+    <!--Section -2--suggested -->
+    <div class="suggested">
+        <h3 style="margin-left: 10px;">Suggested Products</h3>
+        <ul>
+            <li>
+                <a href="#">
+                    <div class="card bounce">
+                        <img src="Images/Top seller/men shirts/100.webp" alt="Denim Jeans">
+                        <p>Shirts</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="# ">
+                    <div class="card bounce ">
+                        <img src="Images/Top seller/phone/111.jpg " alt="Denim Jeans ">
+                        <p>Mobile</p>
+                    </div>
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <div class="card bounce">
+                        <img src="Images/Top seller/men shirts/100.webp" alt="Denim Jeans">
+                        <p>Shirts</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="# ">
+                    <div class="card bounce ">
+                        <img src="Images/Top seller/phone/111.jpg " alt="Denim Jeans ">
+                        <p>Mobile</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <div class="card bounce">
+                        <img src="Images/Top seller/Home-neccessary/30.webp" alt="Denim Jeans">
+                        <p>Beuty</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <div class="card bounce">
+                        <img src="Images/Top seller/170.jpg" alt="Denim Jeans">
+                        <p>Accessories</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <div class="card bounce">
+                        <img src="Images/Top seller/men Shoes/102.jpg" alt="Denim Jeans">
+                        <p>Shoes</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <div class="card bounce">
+                        <img src="Images/Top seller/Home-neccessary/home1.webp" alt="Denim Jeans">
+                        <p>Furniture</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <div class="card bounce">
+                        <img src="Images/Top seller/women/148.jpg" alt="Denim Jeans">
+                        <p>Women</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <div class="card bounce">
+                        <img src="Images/Top seller/men shirts/100.webp" alt="Denim Jeans">
+                        <p>Shirts</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="# ">
+                    <div class="card bounce ">
+                        <img src="Images/Top seller/phone/111.jpg " alt="Denim Jeans ">
+                        <p>Mobile</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <div class="card bounce">
+                        <img src="Images/Top seller/Home-neccessary/30.webp" alt="Denim Jeans">
+                        <p>Beuty</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <div class="card bounce">
+                        <img src="Images/Top seller/170.jpg" alt="Denim Jeans">
+                        <p>Accessories</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <div class="card bounce">
+                        <img src="Images/Top seller/men Shoes/102.jpg" alt="Denim Jeans">
+                        <p>Shoes</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <div class="card bounce">
+                        <img src="Images/Top seller/Home-neccessary/home1.webp" alt="Denim Jeans">
+                        <p>Furniture</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <div class="card bounce">
+                        <img src="Images/Top seller/women/148.jpg" alt="Denim Jeans">
+                        <p>Women</p>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!--Section-3-Biggest Deal-->
+    <div class="biggest-deal">
+        <h3 style="margin-left: 10px;">Biggest Deal On Top Brands</h3>
+        <ul>
+            <li>
+                <div class="card">
+                    <img src="Images/Top seller/watch/129.webp" alt="Denim Jeans" style="width: 100%; height: 180px;">
+                    <h2>Apple Watch</h2>
+                    <p style="font-size: 15px; margin-top: -15px;text-align: center;">Rs.50<s style="font-size: 14px;color: rgb(136, 132, 131);">&nbsp;Rs.450</s></p>
+                    <div style="text-align: center;margin-top: -10px;color: red;">40% off</div>
+                    <p><button>Add to Cart</button></p>
+                </div>
+            </li>
+            <li>
+                <div class="card">
+                    <img src="images/Top seller/phone/114.jpg" alt="Denim Jeans" style="width: 100%;height: 180px;">
+                    <h2>Redmi 9A</h2>
+                    <p style="font-size: 15px; margin-top: -15px;text-align: center;">Rs.50<s style="font-size: 14px;color: rgb(136, 132, 131);">&nbsp;Rs.450</s></p>
+                    <div style="text-align: center;margin-top: -10px;color: red;">70% off</div>
+                    <p><button>Add to Cart</button></p>
+                </div>
+            </li>
+            <li>
+                <div class="card">
+                    <img src="images/Top seller/women/163.jpg" alt="Denim Jeans" style="width: 100%;height: 180px;">
+                    <h2>Sarees</h2>
+                    <p style="font-size: 15px; margin-top: -15px;text-align: center;">Rs.50<s style="font-size: 14px;color: rgb(136, 132, 131);">&nbsp;Rs.450</s></p>
+                    <div style="text-align: center;margin-top: -10px;color: red;">60% off</div>
+                    <p><button>Add to Cart</button></p>
+                </div>
+            </li>
+            <li>
+                <div class="card">
+                    <img src="images/Top seller/women shoes/169.jpg" alt="Denim Jeans" style="width: 100%;height: 180px;">
+                    <h2>Footwear</h2>
+                    <p style="font-size: 15px; margin-top: -15px;text-align: center;">Rs.50<s style="font-size: 14px;color: rgb(136, 132, 131);">&nbsp;Rs.450</s></p>
+                    <div style="text-align: center;margin-top: -10px;color: red;">55% off</div>
+                    <p><button>Add to Cart</button></p>
+                </div>
+            </li>
+            <li>
+                <div class="card">
+                    <img src="Images/pro img4.png" alt="Denim Jeans" style="width: 100%;height: 180px;">
+                    <h2>Mini Drone</h2>
+                    <p style="font-size: 15px; margin-top: -15px;text-align: center;">Rs.50<s style="font-size: 14px;color: rgb(136, 132, 131);">&nbsp;Rs.450</s></p>
+                    <div style="text-align: center;margin-top: -10px;color: red;">47% off</div>
+                    <p><button>Add to Cart</button></p>
+                </div>
+            </li>
+            <li>
+                <div class="card">
+                    <img src="images/pro img5.png" alt="Denim Jeans" style="width: 100%;height: 180px;">
+                    <h2>Sofa Single </h2>
+                    <p style="font-size: 15px; margin-top: -15px;text-align: center;">Rs.50<s style="font-size: 14px;color: rgb(136, 132, 131);">&nbsp;Rs.450</s></p>
+                    <div style="text-align: center;margin-top: -10px;color: red;">79% off</div>
+                    <p><button>Add to Cart</button></p>
+                </div>
+            </li>
+
+        </ul>
+    </div>
+    <!--Section-3--Top-seller-->
+    <div class="top-seller">
+        <h3 style="margin-left: 10px;">eDukan Top Sellers</h3>
+        <ul>
+            <li>
+                <div class="card bounce">
+                    <img src="Images/Top seller/jeans/37.jpg" alt="Denim Jeans" style="width: 100%; height: 180px;">
+                </div>
+            </li>
+
+            <li>
+                <div class="card bounce">
+                    <img src="Images/Top seller/Beuty/20.jpg" alt="Denim Jeans" style="width: 100%;height: 180px;">
+                </div>
+            </li>
+            <li>
+                <div class="card bounce">
+                    <img src="Images/Top seller/173.jpg" alt="Denim Jeans" style="width: 100%;height: 180px;">
+                </div>
+            </li>
+            <li>
+                <div class="card bounce">
+                    <img src="Images/Top seller/172.jpg" alt="Denim Jeans" style="width: 100%;height: 180px;">
+                </div>
+            </li>
+            <li>
+                <div class="card bounce">
+                    <img src="Images/Top seller/jeans/36.jpg" alt="Denim Jeans" style="width: 100%;height: 180px;">
+                </div>
+            </li>
+            <li>
+                <div class="card bounce">
+                    <img src="Images/Top seller/women shoes/166.jpg" alt="Denim Jeans" style="width: 100%;height: 180px;">
+                </div>
+            </li>
+            <li>
+                <div class="card bounce">
+                    <img src="Images/Top seller/women/164.jpg" alt="Denim Jeans" style="width: 100%;height: 180px;">
+                </div>
+            </li>
+
+        </ul>
+    </div>
+
+    <!--Section-4--Folding-->
+    <div class="fol">
+        <main class="main">
+
+            <section class="card1-area">
+
+                <!-- Card: City1 -->
+                <section class="card1-section">
+                    <div class="card1">
+                        <div class="flip-card1">
+                            <div class="flip-card1__container">
+                                <div class="card1-front">
+                                    <div class="card1-front__tp card1-front__tp--city">
+                                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve" class="card1-front__icon">
+                           <g>
+                               <path d="M49.7,22c-1.1,0-2,0.9-2,2v32.2c0,1.1,0.9,2,2,2s2-0.9,2-2V24C51.7,22.9,50.8,22,49.7,22z"/>
+                               <path d="M13,29.5c1.1,0,2-0.9,2-2s-0.9-2-2-2H5.7v-3h20.8c1.1,0,2-0.9,2-2s-0.9-2-2-2H5.7v-3h20.8c1.1,0,2-0.9,2-2s-0.9-2-2-2H5.7
+                                   V7.1h24.8v15.3c0,1.1,0.9,2,2,2s2-0.9,2-2V5.1c0-1.1-0.9-2-2-2H3.7c-1.1,0-2,0.9-2,2v51c0,1.1,0.9,2,2,2s2-0.9,2-2V36.5H13
+                                   c1.1,0,2-0.9,2-2s-0.9-2-2-2H5.7v-3H13z"/>
+                               <path d="M58,11.9c0-0.1,0-0.1,0-0.2c0-0.1,0-0.1-0.1-0.2c0-0.1,0-0.1-0.1-0.2c0-0.1-0.1-0.1-0.1-0.2c0,0,0-0.1-0.1-0.1c0,0,0,0,0,0
+                                   c0-0.1-0.1-0.1-0.1-0.2c0,0-0.1-0.1-0.1-0.1c0,0-0.1-0.1-0.1-0.1c-0.1,0-0.1-0.1-0.2-0.1c0,0-0.1-0.1-0.2-0.1
+                                   c-0.1,0-0.1-0.1-0.2-0.1c-0.1,0-0.1,0-0.2-0.1c-0.1,0-0.1,0-0.2-0.1c0,0-0.1,0-0.1,0c-0.1,0-0.2,0-0.2,0c0,0,0,0,0,0
+                                   c0,0-0.1,0-0.1,0c-0.1,0-0.2,0-0.2,0c-0.1,0-0.1,0-0.2,0c-0.1,0-0.1,0-0.2,0.1c-0.1,0-0.1,0.1-0.2,0.1c0,0-0.1,0-0.1,0.1l-12.6,7.8
+                                   c0,0,0,0,0,0c-0.1,0-0.1,0.1-0.2,0.1c0,0-0.1,0.1-0.1,0.1c0,0-0.1,0.1-0.1,0.1c0,0-0.1,0.1-0.1,0.2c0,0.1-0.1,0.1-0.1,0.2
+                                   c0,0.1-0.1,0.1-0.1,0.2c0,0.1,0,0.1-0.1,0.2c0,0.1,0,0.1-0.1,0.2c0,0.1,0,0.1,0,0.2c0,0.1,0,0.1,0,0.2c0,0,0,0,0,0v5.4H22.1
+                                   c-1.1,0-2,0.9-2,2v28.9c0,1.1,0.9,2,2,2s2-0.9,2-2V29.3h17.3v26.9c0,1.1,0.9,2,2,2s2-0.9,2-2V21l8.6-5.3v40.5c0,1.1,0.9,2,2,2
+                                   s2-0.9,2-2V12.1C58,12,58,12,58,11.9z"/>
+                               <path d="M28,31L28,31c-1.1,0-2,0.9-2,2s0.9,2,2,2s2-0.9,2-2S29.1,31,28,31z"/>
+                               <path d="M33.5,31L33.5,31c-1.1,0-2,0.9-2,2s0.9,2,2,2c1.1,0,2-0.9,2-2S34.6,31,33.5,31z"/>
+                               <path d="M28,36L28,36c-1.1,0-2,0.9-2,2s0.9,2,2,2s2-0.9,2-2S29.1,36,28,36z"/>
+                               <path d="M33.5,36L33.5,36c-1.1,0-2,0.9-2,2s0.9,2,2,2c1.1,0,2-0.9,2-2S34.6,36,33.5,36z"/>
+                           </g>
+                           </svg>
+
+                                        <h2 class="card1-front__heading">
+                                            City break
+                                        </h2>
+                                        <p class="card1-front__text-price">
+                                            From £29
+                                        </p>
+                                    </div>
+
+                                    <div class="card1-front__bt">
+                                        <p class="card1-front__text-view card1-front__text-view--city">
+                                            View me
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="card1-back">
+                                    <!--  <video class="video__container" autoplay muted loop>
+                                <source class="video__media" src="https://player.vimeo.com/external/370331493.sd.mp4?s=e90dcaba73c19e0e36f03406b47bbd6992dd6c1c&profile_id=139&oauth2_token_id=57447761" type="video/mp4">
+                            </video> --><img src="images/Top seller/women/161.jpg" alt="" style="height: 100%;width: 80%;margin-left: 20px;">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="inside-page">
+                            <div class="inside-page__container">
+                                <h3 class="inside-page__heading inside-page__heading--city">
+                                    For urban lovers
+                                </h3>
+                                <p class="inside-page__text">
+                                    As cities never sleep, there are always something going on, no matter what time!
+                                </p>
+                                <a href="#" class="inside-page__btn inside-page__btn--city">View deals</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Card: Ski -->
+                <section class="card1-section">
+                    <div class="card1">
+                        <div class="flip-card1">
+                            <div class="flip-card1__container">
+                                <div class="card1-front">
+                                    <div class="card1-front__tp card1-front__tp--ski">
+                                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve" class="card1-front__icon">
+                           <g>
+                               <path d="M58.8,54.5L38.5,19.3c-0.4-0.6-1-1-1.7-1s-1.4,0.4-1.7,1L14.8,54.5c-0.4,0.6-0.4,1.4,0,2c0.4,0.6,1,1,1.7,1h40.6
+                                   c0.7,0,1.4-0.4,1.7-1C59.2,55.9,59.2,55.1,58.8,54.5z M36.8,24.3l5.8,10c-0.5-0.2-1.1-0.3-1.7-0.3c-2.5,0-3.7,1.5-4.6,2.5
+                                   c-0.7,0.9-1,1.1-1.5,1.1s-0.8-0.2-1.5-1.1c-0.6-0.7-1.3-1.5-2.4-2.1L36.8,24.3z M20,53.5l8.9-15.4c0.5,0,0.7,0.3,1.4,1.1
+                                   c0.8,1,2.1,2.5,4.6,2.5s3.7-1.5,4.6-2.5c0.7-0.9,1-1.1,1.5-1.1c0.5,0,0.8,0.2,1.5,1.1c0.8,1,2.1,2.5,4.5,2.5l6.8,11.8H20z"/>
+                               <path d="M14.7,51.5c1.1,0,2-0.9,2-2s-0.9-2-2-2H6.4l9.1-15.7c0.6,0.6,1.5,1.3,2.9,1.3c1.8,0,2.8-1.2,3.3-1.8
+                                   c0.1-0.1,0.2-0.2,0.3-0.3c0.1,0.1,0.2,0.2,0.3,0.3c0.5,0.6,1.5,1.8,3.3,1.8c1.1,0,2-0.9,2-2c0-1.1-0.9-2-1.9-2
+                                   c-0.1-0.1-0.2-0.2-0.3-0.4c-0.5-0.6-1.5-1.8-3.3-1.8c-1.8,0-2.8,1.2-3.3,1.8c-0.1,0.1-0.2,0.2-0.3,0.3c-0.1-0.1-0.2-0.2-0.3-0.3
+                                   c-0.1-0.2-0.3-0.4-0.5-0.6l5.7-9.9l3.8,6.6c0.6,1,1.8,1.3,2.7,0.7c1-0.6,1.3-1.8,0.7-2.7L25,13.2c-0.4-0.6-1-1-1.7-1
+                                   s-1.4,0.4-1.7,1l-8.4,14.5c-0.1,0.1-0.2,0.3-0.3,0.4L1.2,48.5c0,0,0,0.1,0,0.1c0,0.1-0.1,0.1-0.1,0.2c0,0.1,0,0.1-0.1,0.2
+                                   c0,0.1,0,0.1,0,0.2c0,0.1,0,0.1,0,0.2c0,0,0,0.1,0,0.1c0,0,0,0,0,0.1c0,0.1,0,0.1,0,0.2c0,0.1,0,0.1,0,0.2C1,50,1,50,1,50.1
+                                   c0,0.1,0,0.1,0.1,0.2c0,0.1,0.1,0.1,0.1,0.2c0,0.1,0.1,0.1,0.1,0.2c0,0.1,0.1,0.1,0.1,0.2c0,0,0.1,0.1,0.1,0.1c0,0,0.1,0.1,0.1,0.1
+                                   c0.1,0,0.1,0.1,0.2,0.1c0,0,0,0,0.1,0c0,0,0.1,0,0.1,0c0.1,0.1,0.2,0.1,0.3,0.1c0,0,0.1,0,0.1,0c0.1,0,0.3,0.1,0.5,0.1c0,0,0,0,0,0
+                                   c0,0,0,0,0,0c0,0,0,0,0,0H14.7z"/>
+                               <path d="M40.7,12.3h3.1l-2.2,2.2c-0.6,0.6-0.6,1.5,0,2.1c0.3,0.3,0.7,0.4,1.1,0.4s0.8-0.1,1.1-0.4l2.2-2.2v3.1
+                                   c0,0.8,0.7,1.5,1.5,1.5s1.5-0.7,1.5-1.5v-3.1l2.2,2.2c0.3,0.3,0.7,0.4,1.1,0.4s0.8-0.1,1.1-0.4c0.6-0.6,0.6-1.5,0-2.1l-2.2-2.2h3.1
+                                   c0.8,0,1.5-0.7,1.5-1.5s-0.7-1.5-1.5-1.5h-3.1l2.2-2.2c0.6-0.6,0.6-1.5,0-2.1c-0.6-0.6-1.5-0.6-2.1,0L49,7.2V4
+                                   c0-0.8-0.7-1.5-1.5-1.5S46,3.2,46,4v3.1l-2.2-2.2c-0.6-0.6-1.5-0.6-2.1,0c-0.6,0.6-0.6,1.5,0,2.1l2.2,2.2h-3.1
+                                   c-0.8,0-1.5,0.7-1.5,1.5S39.9,12.3,40.7,12.3z"/>
+                           </g>
+                           </svg>
+                                        <h2 class="card1-front__heading">
+                                            Ski trip
+                                        </h2>
+                                        <p class="card1-front__text-price">
+                                            From £199
+                                        </p>
+                                    </div>
+
+                                    <div class="card1-front__bt">
+                                        <p class="card1-front__text-view card1-front__text-view--ski">
+                                            View me
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="card1-back">
+                                    <img src="images/Top seller/e3.jpg" alt="" style="height: 100%;width: 100%;">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="inside-page">
+                            <div class="inside-page__container">
+                                <h3 class="inside-page__heading inside-page__heading--ski">
+                                    For snow lovers
+                                </h3>
+                                <p class="inside-page__text">
+                                    Love snow? Why not take up exciting ski-in sessions and hit the slope?
+                                </p>
+                                <a href="#" class="inside-page__btn inside-page__btn--ski">View deals</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Card: Beach -->
+                <section class="card1-section">
+                    <div class="card1">
+                        <div class="flip-card1">
+                            <div class="flip-card1__container">
+                                <div class="card1-front">
+                                    <div class="card1-front__tp card1-front__tp--beach">
+                                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve" class="card1-front__icon">
+                           <path d="M57.2,28h-7.4c-0.4-4-2-7.7-4.4-10.6l3.2-3.2c0.8-0.8,0.8-2,0-2.8c-0.8-0.8-2-0.8-2.8,0l-3.2,3.2c-3-2.4-6.6-4-10.6-4.4V2.8
+                               c0-1.1-0.9-2-2-2s-2,0.9-2,2v7.4c-4,0.4-7.7,2-10.6,4.4l-3.2-3.2c-0.8-0.8-2-0.8-2.8,0c-0.8,0.8-0.8,2,0,2.8l3.2,3.2
+                               c-2.4,3-4,6.6-4.4,10.6H2.8c-1.1,0-2,0.9-2,2s0.9,2,2,2h7.4c0.4,4,2,7.7,4.4,10.6l-3.2,3.2c-0.8,0.8-0.8,2,0,2.8
+                               c0.4,0.4,0.9,0.6,1.4,0.6s1-0.2,1.4-0.6l3.2-3.2c3,2.4,6.6,4,10.6,4.4v7.4c0,1.1,0.9,2,2,2s2-0.9,2-2v-7.4c4-0.4,7.7-2,10.6-4.4
+                               l3.2,3.2c0.4,0.4,0.9,0.6,1.4,0.6s1-0.2,1.4-0.6c0.8-0.8,0.8-2,0-2.8l-3.2-3.2c2.4-3,4-6.6,4.4-10.6h7.4c1.1,0,2-0.9,2-2
+                               S58.3,28,57.2,28z M30,45.9c-8.8,0-15.9-7.2-15.9-15.9c0-8.8,7.2-15.9,15.9-15.9c8.8,0,15.9,7.2,15.9,15.9
+                               C45.9,38.8,38.8,45.9,30,45.9z"/>
+                           </svg>
+
+                                        <h2 class="card1-front__heading">
+                                            Beach time
+                                        </h2>
+                                        <p class="card1-front__text-price">
+                                            From £229
+                                        </p>
+                                    </div>
+
+                                    <div class="card1-front__bt">
+                                        <p class="card1-front__text-view card1-front__text-view--beach">
+                                            View me
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="card1-back">
+                                    <img src="images/Top seller/b10.jpg" alt="" style="height: 100%;width: 80%;margin-left: 20px;">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="inside-page">
+                            <div class="inside-page__container">
+                                <h3 class="inside-page__heading inside-page__heading--beach">
+                                    For sun lovers
+                                </h3>
+                                <p class="inside-page__text">
+                                    Relax and get sun-kissed tan in the sea or take up surfting for an adventure!
+                                </p>
+                                <a href="#" class="inside-page__btn inside-page__btn--beach">View deals</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Card: Camping -->
+                <section class="card1-section">
+                    <div class="card1">
+                        <div class="flip-card1">
+                            <div class="flip-card1__container">
+                                <div class="card1-front">
+                                    <div class="card1-front__tp card1-front__tp--camping">
+                                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve" class="card1-front__icon">
+                           <path d="M57,52.1c0-0.4-0.1-0.7-0.3-1.1l-6.3-10.8L32.4,9l2.3-4c0.6-1,0.2-2.2-0.7-2.7c-1-0.6-2.2-0.2-2.7,0.7L30,5.2L28.7,3
+                               c-0.6-1-1.8-1.3-2.7-0.7c-1,0.6-1.3,1.8-0.7,2.7l2.3,4l-18,31.1L3.3,51C3.1,51.3,3,51.7,3,52.1c0,0.4,0.1,0.7,0.3,1
+                               c0.4,0.6,1,1,1.7,1h50c0.7,0,1.4-0.4,1.7-1C56.9,52.8,57,52.4,57,52.1z M34.7,49.8C34.2,50,32.1,50,30,50s-4.2,0-4.7-0.2
+                               c-0.2-0.5-0.2-2.1-0.2-3.6l0-4.3c0-2.7,2.2-4.9,4.9-4.9s4.9,2.2,4.9,4.9l0,4.3C34.9,47.7,34.9,49.3,34.7,49.8z M13.1,42.1L28,16.5
+                               v16.7c-3.9,0.9-6.9,4.4-6.9,8.6l0,4.3c0,1.7,0,2.9,0.2,4H8.5L13.1,42.1z M38.7,50.1c0.2-1,0.2-2.3,0.2-4l0-4.3
+                               c0-4.2-2.9-7.7-6.9-8.6V16.5l15,25.7l4.6,7.9H38.7z"/>
+                           </svg>
+                                        <h2 class="card1-front__heading">
+                                            Camping trek
+                                        </h2>
+                                        <p class="card1-front__text-price">
+                                            From £129
+                                        </p>
+                                    </div>
+
+                                    <div class="card1-front__bt">
+                                        <p class="card1-front__text-view card1-front__text-view--camping">
+                                            View me
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="card1-back">
+                                    <img src="images/Top seller/Home-neccessary/home2.jpg" alt="" style="width: 100%;height: 100%;">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="inside-page">
+                            <div class="inside-page__container">
+                                <h3 class="inside-page__heading inside-page__heading--camping">
+                                    For nature lovers
+                                </h3>
+                                <p class="inside-page__text">
+                                    Get your boots on for some hiking and explore all the beautiful scenery of nature!
+                                </p>
+                                <a href="#" class="inside-page__btn inside-page__btn--camping">View deals</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </section>
+        </main>
+    </div>
+    <!--Section-5--Trending Deals-->
+    <div class="top-seller">
+        <h3 style="margin-left: 10px;">Trending Deals</h3>
+        <ul>
+            <li>
+                <a href="#">
+                    <div class="card bounce">
+                        <img src="Images/Top seller/Bags/6.jpg" alt="Denim Jeans" style="width: 100%; height: 180px;">
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <div class="card bounce">
+                        <img src="Images/Top seller/phone/114.jpg" alt="Denim Jeans" style="width: 100%;height: 180px;">
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <div class="card bounce">
+                        <img src="Images/Top seller/phone/115.jpg" alt="Denim Jeans" style="width: 100%;height: 180px;">
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <div class="card bounce">
+                        <img src="Images/Top seller/Home-neccessary/26.jpg" alt="Denim Jeans" style="width: 100%;height: 180px;">
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <div class="card bounce">
+                        <img src="Images/Top seller/Home-neccessary/32.webp" alt="Denim Jeans" style="width: 100%;height: 180px;">
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <div class="card bounce">
+                        <img src="Images/Top seller/jeans/46.jpg" alt="Denim Jeans" style="width: 100%;height: 180px;">
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <div class="card bounce">
+                        <img src="Images/Top seller/men shirts/79.jpg" alt="Denim Jeans" style="width: 100%;height: 180px;">
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!--New Section-->
+    <div class="container-a">
+        <div class="row">
+            <ul>
+                <li>
+                    <div class="box">
+                        <img src="images/Top seller/b6.jpg">
+                        <div class="box-content">
+                            <h3 class="title">Williamson</h3>
+                            <span class="post">Web designer</span>
+                        </div>
+                        <ul class="icon">
+                            <li><a href="#"><i class="fa fa-search"></i></a></li>
+                            <li><a href="#"><i class="fa fa-link"></i></a></li>
+                        </ul>
+                    </div>
+
+                </li>
+                <li>
+
+                    <div class="box">
+                        <img src="images/Top seller/top1.jpg">
+                        <div class="box-content">
+                            <h3 class="title">Miranda Roy</h3>
+                            <span class="post">Web designer</span>
+                        </div>
+                        <ul class="icon">
+                            <li><a href="#"><i class="fa fa-search"></i></a></li>
+                            <li><a href="#"><i class="fa fa-link"></i></a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+
+                    <div class="box">
+                        <img src="images/Top seller/top4.jpg">
+                        <div class="box-content">
+                            <h3 class="title">Miranda Roy</h3>
+                            <span class="post">Web designer</span>
+                        </div>
+                        <ul class="icon">
+                            <li><a href="#"><i class="fa fa-search"></i></a></li>
+                            <li><a href="#"><i class="fa fa-link"></i></a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="box">
+                        <img src="images/Top seller/top2.jpg">
+                        <div class="box-content">
+                            <h3 class="title">Miranda Roy</h3>
+                            <span class="post">Web designer</span>
+                        </div>
+                        <ul class="icon">
+                            <li><a href="#"><i class="fa fa-search"></i></a></li>
+                            <li><a href="#"><i class="fa fa-link"></i></a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+    <!--Section-6--Shop Deals-->
+    <div class="fourth">
+        <h4 style="margin-left: 10px;font-size: 17px;">Shop Deals on Top Brands</h4>
+        <ul>
+            <li>
+                <a href="#">
+                    <div class="card bounce">
+                        <img src="Images/Top seller/b8.jpg" alt="Denim Jeans" style="width: 100%; height: 220px;">
+                        <h3 style="text-align: center;">
+                            <blink>80% Off </blink>
+                        </h3>
+                        <p style="font-size: 20px; margin-top: -15px;text-align: center;">Rs.50<del style="font-size: 15px;color: rgb(136, 132, 131);"> &nbsp; Rs.450</del></p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <div class="card bounce">
+                        <img src="Images/Top seller/h1.jpg" alt="Denim Jeans" style="width: 100%;height: 220px;">
+                        <h3 style="text-align: center;">
+                            <blink>80% Off </blink>
+                        </h3>
+                        <p style="font-size: 20px; margin-top: -15px;text-align: center;">Rs.50<del style="font-size: 15px;color: rgb(136, 132, 131);"> &nbsp; Rs.450</del></p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <div class="card bounce">
+                        <img src="Images/Top seller/b21.jpg" alt="Denim Jeans" style="width: 100%;height: 220px;">
+                        <h3 style="text-align: center;">
+                            <blink>80% Off </blink>
+                        </h3>
+                        <p style="font-size: 20px; margin-top: -15px;text-align: center;">Rs.50<del style="font-size: 15px;color: rgb(136, 132, 131);"> &nbsp; Rs.450</del></p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <div class="card bounce">
+                        <img src="Images/Top seller/New folder/109.jpg" alt="Denim Jeans" style="width: 100%;height: 220px;">
+                        <h3 style="text-align: center;">
+                            <blink>80% Off </blink>
+                        </h3>
+                        <p style="font-size: 20px; margin-top: -15px;text-align: center;">Rs.50<del style="font-size: 15px;color: rgb(136, 132, 131);"> &nbsp; Rs.450</del></p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <div class="card bounce">
+                        <img src="Images/Top seller/men shirts/61.jpg" alt="Denim Jeans" style="width: 100%;height: 220px;">
+                        <h3 style="text-align: center;">
+                            <blink>80% Off </blink>
+                        </h3>
+                        <p style="font-size: 20px; margin-top: -15px;text-align: center;">Rs.50<del style="font-size: 15px;color: rgb(136, 132, 131);"> &nbsp; Rs.450</del></p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <div class="card bounce">
+                        <img src="Images/Top seller/e1.jpg" alt="Denim Jeans" style="width: 100%;height: 220px;">
+                        <h3 style="text-align: center;">
+                            <blink>80% Off </blink>
+                        </h3>
+                        <p style="font-size: 20px; margin-top: -15px;text-align: center;">Rs.50<del style="font-size: 15px;color: rgb(136, 132, 131);"> &nbsp; Rs.450</del></p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <div class="card bounce">
+                        <img src="Images/Top seller/top1.jpg" alt="Denim Jeans" style="width: 100%;height: 220px;">
+                        <h3 style="text-align: center;">
+                            <blink>80% Off </blink>
+                        </h3>
+                        <p style="font-size: 20px; margin-top: -15px;text-align: center;">Rs.50<del style="font-size: 15px;color: rgb(136, 132, 131);"> &nbsp; Rs.450</del></p>
+                    </div>
+                </a>
+            </li>
+        </ul>
+
+    </div>
+    <!--Section-7--Categories-->
+    <div class="fourth1">
+        <h3 style="margin-left: 10px;">Categories</h3>
+        <ul>
+            <li>
+                <a href="#">
+                    <div class="card bounce">
+                        <img src="Images/Top seller/men shirts/100.webp" alt="Denim Jeans" style="width: 100%; height: 220px;">
+                        <p style="font-size: 20px; margin-top: 5px;text-align: center;">Shirts</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <div class="card bounce">
+                        <img src="Images/Top seller/phone/111.jpg" alt="Denim Jeans" style="width: 100%;height: 220px;">
+                        <p style="font-size: 20px; margin-top: 5px;text-align: center;">Mobile</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <div class="card bounce">
+                        <img src="Images/Top seller/Home-neccessary/30.webp" alt="Denim Jeans" style="width: 100%;height: 220px;">
+                        <p style="font-size: 20px; margin-top: 5px;text-align: center;">Beuty</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <div class="card bounce">
+                        <img src="Images/Top seller/170.jpg" alt="Denim Jeans" style="width: 100%;height: 220px;">
+                        <p style="font-size: 20px; margin-top: 5px;text-align: center;">Accessories</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <div class="card bounce">
+                        <img src="Images/Top seller/men Shoes/102.jpg" alt="Denim Jeans" style="width: 100%;height: 220px;">
+                        <p style="font-size: 20px; margin-top: 5px;text-align: center;">Shoes</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <div class="card bounce">
+                        <img src="Images/Top seller/Home-neccessary/home1.webp" alt="Denim Jeans" style="width: 100%;height: 220px;">
+                        <p style="font-size: 20px; margin-top: 5px;text-align: center;">Furniture</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <div class="card bounce">
+                        <img src="Images/Top seller/women/148.jpg" alt="Denim Jeans" style="width: 100%;height: 220px;">
+                        <p style="font-size: 20px; margin-top: 5px;text-align: center;">Women</p>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!--Section-8--Inspired by your-->
+    <div class="fifth">
+        <h3 style="margin-left: 10px;">Inspired By Your Browsing History</h3>
+        <ul>
+            <li>
+                <a href="#">
+                    <div class="card bounce">
+                        <img src="Images/Top seller/h5.jpg" alt="Denim Jeans" style="width: 100%; height: 220px;">
+                        <div class="pp">Munchkin Fresh Food fresher, 2 pack,Blue/green</div>
+                        <div><span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                        </div>
+                        <p style="font-size: 15px;margin-top: -2px;color: black;">Rs.50<del style="font-size: 10px;color: rgb(136, 132, 131);"> &nbsp; Rs.450</del><br>In stock</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <div class="card bounce">
+                        <img src="Images/Top seller/ba1.jpg" alt="Denim Jeans" style="width: 100%;height: 220px;">
+                        <div class="pp">Munchkin Fresh Food fresher, 2 pack,Blue/green</div>
+                        <div><span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                        </div>
+                        <p style="font-size: 15px;margin-top: -2px;color: black;">Rs.50<del style="font-size: 10px;color: rgb(136, 132, 131);"> &nbsp; Rs.450</del><br>In stock</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <div class="card bounce">
+                        <img src="Images/Top seller/e3.jpg" alt="Denim Jeans" style="width: 100%;height: 220px;">
+                        <div class="pp">Munchkin Fresh Food fresher, 2 pack,Blue/green</div>
+                        <div><span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                        </div>
+                        <p style="font-size: 15px;margin-top: -2px;color: black;">Rs.50<del style="font-size: 10px;color: rgb(136, 132, 131);"> &nbsp; Rs.450</del><br>In stock</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <div class="card bounce">
+                        <img src="Images/Top seller/b17.jpg" alt="Denim Jeans" style="width: 100%;height: 220px;">
+                        <div class="pp">Munchkin Fresh Food fresher, 2 pack,Blue/green</div>
+                        <div><span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                        </div>
+                        <p style="font-size: 15px;margin-top: -2px;color: black;">Rs.50<del style="font-size: 10px;color: rgb(136, 132, 131);"> &nbsp; Rs.450</del><br>In stock</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <div class="card bounce">
+                        <img src="Images/Top seller/b13.jpg" alt="Denim Jeans" style="width: 100%;height: 220px;">
+                        <div class="pp">Munchkin Fresh Food fresher, 2 pack,Blue/green</div>
+                        <div><span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                        </div>
+                        <p style="font-size: 15px;margin-top: -2px;color: black;">Rs.50<del style="font-size: 10px;color: rgb(136, 132, 131);"> &nbsp; Rs.450</del><br>In stock</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <div class="card bounce">
+                        <img src="Images/Top seller/m1.jpg" alt="Denim Jeans" style="width: 100%;height: 220px;">
+                        <div class="pp">Munchkin Fresh Food fresher, 2 pack,Blue/green</div>
+                        <div><span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                        </div>
+                        <p style="font-size: 15px;margin-top: -2px;color: black;">Rs.50<del style="font-size: 10px;color: rgb(136, 132, 131);"> &nbsp; Rs.450</del><br>In stock</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <div class="card bounce">
+                        <img src="Images/Top seller/top.jpg" alt="Denim Jeans" style="width: 100%;height: 220px;">
+                        <div class="pp">Munchkin Fresh Food fresher, 2 pack,Blue/green</div>
+                        <div><span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                        </div>
+                        <p style="font-size: 15px;margin-top: -2px; color: black;">Rs.50<del style="font-size: 10px;color: rgb(136, 132, 131);"> &nbsp; Rs.450</del><br>In stock</p>
+                    </div>
+                </a>
+            </li>
+        </ul>
+
+    </div>
+
+    <!--End--Fotter-->
+    <footer>
+        <div class="footer-gray">
+            <div class="footer-custom">
+                <div class="footer-list">
+                    <div class="footer-list-wrap">
+                        <h6 class="ftr-hdr">Order Toll Free</h6>
+                        <ul class="ftr-links-sub">
+                            <li>9098260397</li>
+                        </ul>
+                        <h6 class="ftr-hdr">International</h6>
+                        <ul class="ftr-links-sub">
+                            <li><a href="http://www.art.co.uk" rel="nofollow">United Kingdom</a></li>
+                        </ul>
+                    </div>
+                    <!--footer list wrap-->
+                    <div class="footer-list-wrap">
+                        <h6 class="ftr-hdr">Customer Service</h6>
+                        <ul class="ftr-links-sub">
+                            <li><a href="/help/talktous.html" rel="nofollow">Contact Us</a></li>
+                            <li><a href="/help/placingorders.html" rel="nofollow">Ordering</a></li>
+                            <li><a href="/help/shipping.html" rel="nofollow">Shipping &amp; Delivery</a></li>
+                            <li><a href="/help/shippingreturns.html" rel="nofollow">Returns</a></li>
+                            <li><a href="/help/international-shipping.html" rel="nofollow">International Orders</a></li>
+                            <li><a href="/~/egift-cards/" rel="nofollow">Gift Cards</a></li>
+                            <li><a href="/help/faq.html" rel="nofollow">FAQs</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-list-wrap">
+                        <h6 class="ftr-hdr">About Art.com</h6>
+                        <ul class="ftr-links-sub">
+                            <li><a href="/asp/aboutus/default-asp/_/postres.html" rel="nofollow">Our Company</a></li>
+                            <li><a href="#" rel="nofollow">Careers</a></li>
+                            <li><a href="#" rel="nofollow">Artist Rising</a></li>
+                            <li><a href="#" rel="nofollow">Business &amp; Trade Sales</a></li>
+                            <li><a href="http://affiliates.art.com/index.aspx" rel="nofollow">Affiliate Program</a></li>
+                            <li><a href="#" rel="nofollow">Shop our Catalog</a></li>
+                            <li><a href="#" rel="nofollow">ART.COM BLOG</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-list-wrap">
+                        <h6 class="ftr-hdr">My Account</h6>
+                        <ul class="ftr-links-sub">
+                            <art:content rule="!loggedin">
+                                <li class="ftr-Login">
+                                    <span class="link login-trigger">Access my Account</span>
+                                </li>
+                                <li><span class="link" onclick="link('/asp/secure/your_account/track_order-asp/_/posters.html')">Track My Order</span></li>
+                            </art:content>
+                            <art:content rule="loggedin">
+                                <li class="ftr-Login"><span class="link ftr-access-my-account">Access My Account</span></li>
+                                <li><span class="link" onclick="window.location.href=getProfilekey() + '?pagetype=oh';">Track My Order</span></li>
+                            </art:content>
+                        </ul>
+                    </div>
+                    <!--/.footer-list-wrap-->
+                </div>
+                <!--/.footer-lists-->
+                <div class="footer-email">
+                    <h6 class="ftr-hdr">Sign up for exclusive offers and inspiration</h6>
+                    <div id="ftr-email" class="ftr-email-form">
+                        <form id="ftrEmailForm" action="http://em.art.com/pub/rf" method="post">
+                            <div class="error">Please enter a valid email address</div>
+                            <input type="text" name="email_address_" id="ftrEmailInput" class="input" placeholder="Enter Email address" />
+                            <input type="submit" class="button" value="SUBMIT" />
+                            <input type="hidden" name="country_iso2" value="">
+                            <input type="hidden" name="language-iso2" value="en">
+                            <input type="hidden" name="site_domain" value="art.com">
+                            <input type="hidden" name="email_acq_source" value="01-000001">
+                            <input type="hidden" name="email_acq_date" value="" id="ftr-email-date">
+                            <input type="hidden" name="brand_id" value="ART">
+                            <input type="hidden" name="_ri_" value="GFGHFgfgfgfgffgsdghgh">
+                        </form>
+                    </div>
+                    <!--/.ftr-email-form-->
+                    <div class="ftr-email-privacy-policy">
+
+                    </div>
+                </div>
+                <!--/.footer-email-->
+                <div class="footer-social">
+                    <h6 class="ftr-hdr">Follow us</h6>
+                    <ul>
+                        <li>
+                            <a href="https://www.facebook.com/profile.php?id=100006448387819" title="Facebook" onclick="_gaq.push(['_trackSocial','Facebook','Follow','Footer','undefined','True']);"><img width="24" height="24" alt="Like us on Facebook" src="http://cache1.artprintimages.com/images/jump_pages/rebrand/footer/fb.png"> </a>
+                        </li>
+                        <li>
+                            <a href="https://plus.google.com/108089796661280870153" title="Google+" onclick="_gap.push(['_trackSocial','GooglePlus','Follow','Footer','undefined','True']);"><img width="24" height="24" alt="Follow us on Google+" src="http://cache1.artprintimages.com/images/jump_pages/rebrand/footer/gplus.png"></a>
+                        </li>
+                        <li>
+                            <a href="https://pinterest.com/artdotcom/" target="blank"><img width="24" height="24" alt="Follow us on Pinterest" src="http://cache1.artprintimages.com/images/jump_pages/rebrand/footer/pin-badge.png"></a>
+                        </li>
+                        <li>
+                            <a href="https://instagram.com/aarvindkushwaha95/" target="blank"><img width="24" height="24" alt="Follow us on Instagram" src="http://cache1.artprintimages.com/images/jump_pages/rebrand/footer/instagram-badge.png"></a>
+                        </li>
+                        <li>
+                            <a href="https://www.twitter.com/ArvindK33564910" title="Twitter" onclick="_gap.push(['_trackSocial','Twitter','Follow','Footer','undefined','True']);"><img width="67" alt="Follow us on Twitter" src="http://cache1.artprintimages.com/images/jump_pages/rebrand/footer/twitter.png"></a>
+                        </li>
+                    </ul>
+                </div>
+                <!--/.footer-social-->
+                <div class="footer-legal">
+                    <p>&copy; Art.com Inc. All Rights Reserved. | <a href="/help/privacy-policy.html" rel="nofollow">Privacy Policy</a>|
+                        <a href="help/terms-of-use.html" rel="nofollow">Terms of use</a>|
+                        <a href="/help/term-of-sale.html" rel="nofollow">Terms of sale</a>
+                    </p>
+                    <p>Art.com You+Art, and Photos [to] Art are trademarks or registered trademarks of Art.com Inc.</p>
+                    <p>Various aspects of this website are covered by issued US patent No. 7,973,796 and other pending patent application</p>
+                </div>
+                <!--/.footer-legal-->
+                <div class="footer-payment">
+                    <ul>
+                        <li class="ftr-stella">
+                            <span title="Stella Service" onclick="openLink('http://www.stellaservice.com/profile/Art.com/')"></span>
+                        </li>
+                        <li>
+                            <span onclick="clickTrack(); return false;" onmouseover="this.style.cursor='pointer'">
+                              <img border="0" alt="HACKER SAFE certified sites prevent over 99.9% of hacker crime." src="https://images.scanalert.com/meter/www.art.com/31.gif">
+                            </span>
+                        </li>
+                        <li class="ftr-bbb">
+                            <span title="BBB" onclick="openLink('http://www.bbb.org/raleigh-durham/business-reviews/art-suppliers/artcom-inc-in-raleigh-nc-5001914')"></span>
+                        </li>
+                    </ul>
+                </div>
+                <!--/.footer-payment-->
+            </div>
+            <!--/.footer-custom-->
+        </div>
+        <!--/.footer-grey-->
+    </footer>
+
+</body>
+
+</html>
